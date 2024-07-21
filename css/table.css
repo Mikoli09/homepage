@@ -1,0 +1,24 @@
+
+.table {
+    font-family: "Lato", sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+}
+
+.table__row:hover {
+    background: azure;
+}
+
+.table__cell {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.table__caption {
+    margin: 20px;
+    font-size: large;
+    font-weight: bold;
+}

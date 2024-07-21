@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Strona Marcina - dział czwarty - BEM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/picture.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1>Homepage</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li class="nav__item"><a class="nav__link" href="#o-mnie">O&nbsp;mnie</a></li>
+            <li class="nav__item"><a class="nav__link" href="#książki">Książki</a></li>
+            <li class="nav__item"><a class="nav__link" href="#ojciec-chrzestny">Ojciec&nbsp;Chrzestny</a></li>
+            <li class="nav__item"><a class="nav__link" href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <button class="backgroundChangeButton js-backgroundChangeButton">Włącz ciemne tło</button>
+
+        <section class="section" id="o-mnie">
+            <header class="section__header">O mnie</header>
+            <img class="picture" src="https://i.postimg.cc/QCwvjwsX/Marcin.jpg" alt="Marcin">
+            <p> Jestem Marcin, mam 29 lat. Pracuje jako automatyk i często podróżuje. W wolnym czasie udaje się w góry,
+                gdzie najchętniej spędzam czas i resetuję głowe od codziennego życia.</p>
+            <p> Drugim sposobem na oderwanie się od rutyny jest czytanie książek.</p>
+
+            <p>W wolnych chwilach staram się uczyć języka niemieckiego oraz sumiennie pracować nad Frontendem.</p>
+        </section>
+
+        <section class="section" id="książki">
+            <header class="section__header">Książki</header>
+            <p>W 2024 roku postawiłem sobie za cel przeczytanie kilku książek.
+                <br> Część z nich jest już za mną i były świetne, mam nadzieję, że przy kolejnych również się nie
+                zawiodę.
+            </p>
+            <p> W tabeli poniżej przedstawiam książki, które już przeczytałem i te, które czekają na swoją kolej.</p>
+            <p>W kolumnie <b>"Twój status"</b> po prawej stronie masz możliwość zaznaczenia swojego statusu dla
+                wybranych przeze mnie
+                książek. </p>
+            <p>Zaznacz checkbox jeśli przeczytałeś pozycję lub zostaw checkbox pusty jeśli tego nie zrobiłeś.</p>
+            <p>Po zaznaczeniu odpowiednich pozycji naciśnij przycisk <b>"WERYFKIKACJA"</b> umieszczony poniżej tabeli
+                aby
+                dostać informację ile z moich książek masz już przeczytane.</p>
+            <table class="table">
+                <caption class="table__caption">Książki na 2024 rok</caption>
+                <tr class="table__row">
+                    <th class="table__cell" scope="col">Pozycja</th>
+                    <th class="table__cell" scope="col">Autor</th>
+                    <th class="table__cell" scope="col">Tytuł</th>
+                    <th class="table__cell" scope="col">Mój status</th>
+                    <th class="table__cell" scope="col">Twój status</th>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell" scope="row">1</th>
+                    <td class="table__cell">Mario Puzo</td>
+                    <td class="table__cell">Ojciec chrzestny</td>
+                    <td class="table__cell"> &#9745;</td>
+                    <td class="table__cell"><input type="checkbox" id="Status1"></td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell" scope="row">2</th>
+                    <td class="table__cell">Pierre Franckh</td>
+                    <td class="table__cell">Prawo rezonansu</td>
+                    <td class="table__cell">&#9745;</td>
+                    <td class="table__cell"><input type="checkbox" id="Status2"></td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell" scope="row">3</th>
+                    <td class="table__cell"> Milton Friedmann</td>
+                    <td class="table__cell"> Kapitalizm i wolność</td>
+                    <td class="table__cell">&#9745;</td>
+                    <td class="table__cell"><input type="checkbox" id="Status3"></td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell" scope="row">4</th>
+                    <td class="table__cell">James Clear</td>
+                    <td class="table__cell">Atomowe nawyki</td>
+                    <td class="table__cell">&#9744;</td>
+                    <td class="table__cell"><input type="checkbox" id="Status4"></td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell" scope="row">5</th>
+                    <td class="table__cell"> Jan Białek</td>
+                    <td class="table__cell">Tech. Krytyka rozwoju środowiska technologicznego</td>
+                    <td class="table__cell">&#9744;</td>
+                    <td class="table__cell"><input type="checkbox" id="Status5"></td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell" scope="row">6</th>
+                    <td class="table__cell"> Georg Orwell</td>
+                    <td class="table__cell">1984</td>
+                    <td class="table__cell">&#9744;</td>
+                    <td class="table__cell"><input type="checkbox" id="Status6"></td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell" scope="row">7</th>
+                    <td class="table__cell">Michael Newton</td>
+                    <td class="table__cell">Wędrówka dusz</td>
+                    <td class="table__cell">&#9744;</td>
+                    <td class="table__cell"><input type="checkbox" id="Status7"></td>
+                </tr>
+            </table>
+            <p><button class="verifyButton js-verifyButton">WERYFIKACJA</button></p>
+            <p class="amountText">Przeczytałeś/aś <strong><span id="amountText">zero książek</span></strong> z mojej
+                listy.</p>
+        </section>
+        <section class="section" id="ojciec-chrzestny">
+            <header class="section__header">Ojciec Chrzestny</header>
+            <p>Jedną z ciekawszych książek, które przeczytałem do tej pory jest wspomniany na pierwszym miesjcu
+                "Ojciec
+                Chrzestny".</p>
+            <p>Opowiada ona o losach sycylijskiej rodziny mafijnej sprawującej rządy w Nowym Jorku.</p>
+            <p>Powieść o sycylijskiej rodzinie jest pozycją - według mnie- na prawdę godną uwagi oraz doczekała się
+                ona
+                <br>
+                filmowej adaptacji wyreżyserowanej przez Francisa Copollę.
+            </p>
+
+            <p>Kliknij w link jeśli masz ochotę przeczytać
+                <a target="_blank" title="Wikipedia - Ojciec Chrzestny"
+                    href="https://pl.wikipedia.org/wiki/Ojciec_chrzestny_(powie%C5%9B%C4%87)"> więcej o Ojcu Chrzestnym.
+                </a>
+            </p>
+        </section>
+    </main>
+    <footer class="footer" id="kontakt">
+        <p>E-mail: <a title="Mail do Marcina" href="mailto:osojca.marcin1@gmail.com"> osojca.marcin1@gmail.com </a></p>
+        <p>Numer telefonu:<a title="Telefon do Marcina" href="tel:222333444">222333444 </a></p>
+    </footer>
+</body>
+
+</html>

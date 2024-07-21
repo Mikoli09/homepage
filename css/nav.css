@@ -1,0 +1,27 @@
+
+
+.nav {
+    background-color: aliceblue;
+    border: ridge 5px;
+    border-radius: 10px;
+    margin: 40px;
+    overflow-x: auto;
+}
+
+.nav__item {
+    display: inline;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__link:hover {
+    text-decoration: none;
+    background-color: rgb(189, 216, 240);
+    padding: 15px 0px;
+    border-radius: 10px;
+}

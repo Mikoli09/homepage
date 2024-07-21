@@ -1,0 +1,10 @@
+
+.header{
+    font-family: "Lato", sans-serif;
+    background-color: aliceblue;
+    font-size: 15px;
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 10px;
+    border: 2px solid;
+}

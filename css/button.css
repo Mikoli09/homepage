@@ -1,0 +1,17 @@
+
+.backgroundChangeButton {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+
+.verifyButton {
+    cursor: pointer;
+    background-color: #49aaff;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px;
+}
