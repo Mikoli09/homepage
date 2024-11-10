@@ -4,6 +4,7 @@
     border-collapse: collapse;
     margin: auto;
     width: 100%;
+    overflow-x: auto;
 }
 
 .table__row:hover {
@@ -21,4 +22,8 @@
     margin: 20px;
     font-size: large;
     font-weight: bold;
+}
+
+.tableOverflow {
+    overflow-x: auto;
 }

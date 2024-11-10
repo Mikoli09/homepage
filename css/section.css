@@ -10,6 +10,16 @@
     text-align: center;
 }
 
+.section__books {
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 5px 5px rgb(189, 216, 240);
+    border-radius: 20px;
+    text-align: center;
+}
+
 .section__header {
     font-weight: bold;
     font-size: 25px;

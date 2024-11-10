@@ -1,4 +1,7 @@
 
+.ul {
+    padding: 0;
+}
 
 .nav {
     background-color: aliceblue;
@@ -25,3 +28,4 @@
     padding: 15px 0px;
     border-radius: 10px;
 }
+
